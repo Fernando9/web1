@@ -21,5 +21,5 @@ article {background-color:#a68e73; margin:1%; width:23%; float:left; min-width:1
 
 img{
 	max-width:100%;
-	width:auto 9; /*esto es para internet explorer 8 en el 7 funciona normal*/
+	width:auto 9; /*esto es para internet explorer 8 en el 7 funciona normal la resolucion es mejor a 72 dpi*/
 }
