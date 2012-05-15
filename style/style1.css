@@ -1,0 +1,25 @@
+/*Reset and HTML5 stuff*/
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,br{margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+audio, canvas, video {display:inline-block; display: inline; *zoom:1;}
+
+
+
+body {background-color: #f0e8e6; font-size:100%;}
+
+a:link, a:visited {color: #d26507; text-decoration:none;}
+a:hover {color: #000;}
+a:focus {outline: thin-dotted;}
+a:hover, a:active {outline:0;}							/*min-width me permite decir hasta donde se hace pequeno y max-width me limita lo maximo para verlo*/
+
+section {width:100; max-width:800px; margin: 0 auto; background-color:green; display: block; overflow:hidden;}
+article {background-color:#a68e73; margin:1%; width:23%; float:left; min-width:180px; padding:2%; /* al agregar padding agrega el box-sizing:border-box*/
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	/*max-width:250px;*/} /* son cuatro columnas por que son 25% lo que por cuatro equivale al 100*/
+
+img{
+	max-width:100%;
+	width:auto 9; /*esto es para internet explorer 8 en el 7 funciona normal*/
+}
