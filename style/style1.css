@@ -1,4 +1,4 @@
-/*Reset and HTML5 stuff*/
+/*Reset and HTML5 stuff*
 html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,br{margin:0; padding:0;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
 audio, canvas, video {display:inline-block; display: inline; *zoom:1;}
@@ -11,15 +11,107 @@ a:link, a:visited {color: #d26507; text-decoration:none;}
 a:hover {color: #000;}
 a:focus {outline: thin-dotted;}
 a:hover, a:active {outline:0;}							/*min-width me permite decir hasta donde se hace pequeno y max-width me limita lo maximo para verlo*/
-
+/*
 section {width:100; max-width:800px; margin: 0 auto; background-color:green; display: block; overflow:hidden;}
 article {background-color:#a68e73; margin:1%; width:23%; float:left; min-width:180px; padding:2%; /* al agregar padding agrega el box-sizing:border-box*/
-	-webkit-box-sizing:border-box;
+/*	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	/*max-width:250px;*/} /* son cuatro columnas por que son 25% lo que por cuatro equivale al 100*/
-
+/*
 img{
 	max-width:100%;
 	width:auto 9; /*esto es para internet explorer 8 en el 7 funciona normal la resolucion es mejor a 72 dpi*/
+/*}*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{ width:100%; width: auto 9;}
+/* END RESET*/
+
+body {background-color:#f0e8e6; font:normal 100% Cambria, Georgia, Serif;}/* el em se deja a cargo del ordenador*/
+
+a:link, a:visited {color: #d26507; text-decoration:none;}
+a:hover {color: #000;}
+a:focus {outline: thin-dotted;}
+a:hover, a:active {outline:0;}	
+
+h1 {font-size: 1.375em; /*24px / 16px*/}
+
+h1 em { 
+	color:darkgrey; 
+	font-size:.666666em; /*12px / 24px */
+}
+
+#wrap {
+	width:100%;/*1024px*/
+	margin: 0 auto;
+	background-color:green;
+	display:block;
+	overflow: hidden;
+}
+
+section{
+	float:left;
+	width:66% ;/*682px*/
+	background-color: olive;
+}
+
+aside{
+	float:right;
+	width:33% ; /*341px*/
+	background-color:#f4f4f4;
+}
+
+article{ background-color:#a68e73; margin:1%; width:23%; float:left; min-width:150px; padding:2%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
